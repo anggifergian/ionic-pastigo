@@ -1,0 +1,110 @@
+<ion-content [fullscreen]="true">
+  <div class="base-container">
+    <div style="position: sticky; top: 0px; z-index: 1;">
+      <img 
+        style="width: 100%; height: 170px;"
+        src="assets/images/bg-red.png" 
+        alt="Background Home"
+      />
+    </div>
+
+    <div style="margin-top: -120px; position: relative; z-index: 10;" class="pb-2 px-2">
+      <div class="flex flex-col items-center pb-3">
+        <div class="text-lg font-medium text-white">Akun</div>
+      </div>
+
+      <ion-card mode="ios" style="margin: 8px">
+        <ion-card-content mode="md">
+          <div class="flex flex-row justify-between items-center">
+            <img 
+              style="height: 80px;"
+              src="assets/images/profile-img.png" 
+              class="rounded float-left" 
+              alt="Truck Large"
+            />
+            <div class="flex flex-col items-start" style="width: 55%">
+              <div class="text-md text-black-600 font-medium">Albertus Pangaribuan</div>
+              <div class="text-sm text-black-200">+62822-8058-1234</div>
+              <div class="text-sm text-black-200">advenreey@gmail.com</div>
+            </div>
+            <div>
+              <div class="text-md text-red font-medium">Ubah</div>
+            </div>
+          </div>
+        </ion-card-content>
+      </ion-card>
+
+      <div class="flex flex-row justify-between items-center px-2 py-3">
+        <div>
+          <img style="max-width: 100%; height: 18px;" src="assets/images/icon-lock.png" alt="Icon" />
+        </div>
+        <div class="flex flex-row justify-start pt-1 pl-3" style="width: 100%">
+          <div class="text-md font-medium text-black-400">Ganti Kata Sandi</div>
+        </div>
+        <div class="pt-1">
+          <img style="max-width: 100%; height: 32px;" src="assets/images/icon-arrow-right.png" alt="Right Arrow" />
+        </div>
+      </div>
+
+      <div class="flex flex-row justify-between items-center px-2 py-3">
+        <div>
+          <img style="max-width: 100%; height: 18px;" src="assets/images/icon-star.png" alt="Icon" />
+        </div>
+        <div class="flex flex-row justify-start pt-1 pl-3" style="width: 100%">
+          <div class="text-md font-medium text-black-400">Beri Nilai Aplikasi</div>
+        </div>
+        <div class="pt-1">
+          <img style="max-width: 100%; height: 32px;" src="assets/images/icon-arrow-right.png" alt="Right Arrow" />
+        </div>
+      </div>
+
+      <div class="flex flex-row justify-between items-center px-2 py-3">
+        <div>
+          <img style="max-width: 100%; height: 18px;" src="assets/images/icon-bell.png" alt="Icon" />
+        </div>
+        <div class="flex flex-row justify-start pt-1 pl-3" style="width: 100%">
+          <div class="text-md font-medium text-black-400">Notifikasi</div>
+        </div>
+        <div class="pt-1">
+          <img style="max-width: 100%; height: 32px;" src="assets/images/icon-arrow-right.png" alt="Right Arrow" />
+        </div>
+      </div>
+
+      <div class="flex flex-row justify-between items-center px-2 py-3">
+        <div>
+          <img style="max-width: 100%; height: 18px;" src="assets/images/icon-question.png" alt="Icon" />
+        </div>
+        <div class="flex flex-row justify-start pt-1 pl-3" style="width: 100%">
+          <div class="text-md font-medium text-black-400">Bantuan</div>
+        </div>
+        <div class="pt-1">
+          <img style="max-width: 100%; height: 32px;" src="assets/images/icon-arrow-right.png" alt="Right Arrow" />
+        </div>
+      </div>
+
+      <div class="flex flex-row justify-between items-center px-2 py-3">
+        <div>
+          <img style="max-width: 100%; height: 18px;" src="assets/images/icon-shield.png" alt="Icon" />
+        </div>
+        <div class="flex flex-row justify-start pt-1 pl-3" style="width: 100%">
+          <div class="text-md font-medium text-black-400">Kebijakan Privasi</div>
+        </div>
+        <div class="pt-1">
+          <img style="max-width: 100%; height: 32px;" src="assets/images/icon-arrow-right.png" alt="Right Arrow" />
+        </div>
+      </div>
+
+      <div 
+        class="flex flex-row justify-between items-center px-2 py-3"
+        (click)="showExitDialog()"
+      >
+        <div>
+          <img style="max-width: 100%; height: 18px;" src="assets/images/icon-exit.png" alt="Icon" />
+        </div>
+        <div class="flex flex-row justify-start pt-1 pl-3" style="width: 100%">
+          <div class="text-md font-medium text-black-400">Keluar</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

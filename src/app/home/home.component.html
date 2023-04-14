@@ -1,0 +1,194 @@
+<ion-content [fullscreen]="true">
+  <div class="base-container">
+    
+    <div style="position: sticky; top: 0px; z-index: 1;">
+      <img 
+        style="width: 100%;"
+        src="assets/images/bg-home.png" 
+        alt="Background Home"
+      />
+    </div>
+
+    <div style="margin-top: -110px; position: relative; z-index: 10;" class="pb-2 px-2">
+      <div class="flex flex-col items-center pb-2">
+        <div class="text-sm text-white">Abang Express</div>
+        <div class="text-lg font-medium text-white">Agen Jogjakarta</div>
+      </div>
+  
+      <ion-card mode="ios" style="margin: 8px">
+        <ion-card-content mode="md">
+          <div class="flex flex-row justify-between items-center">
+            <img 
+              style="height: 40px;"
+              src="assets/images/home-profile.png" 
+              class="rounded float-left" 
+              alt="Truck Large"
+            />
+            <div>
+              <div class="text-lg font-medium text-black-400">
+                {{ isChecked ? 'Online' : 'Offline' }}
+              </div>
+            </div>
+            <ion-toggle 
+              mode="ios"
+              aria-label="Danger toggle" 
+              color="danger" 
+              [(ngModel)]="isChecked">
+            </ion-toggle>
+          </div>
+        </ion-card-content>
+      </ion-card>
+  
+      <div class="flex flex-row justify-center items-center">
+        <div class="w-100">
+          <ion-card mode="ios" style="margin: 8px">
+            <ion-card-content>
+              <div class="flex flex-row items-start justify-start">
+                <div class="mr-2">
+                  <img 
+                    style="height: 40px;"
+                    src="assets/images/bg-truck-lg.png" 
+                    class="rounded float-left" 
+                    alt="Truck Large"
+                  />
+                </div>
+                <div class="flex flex-col items-start">
+                  <div class="text-sm font-medium text-black-200">Pending</div>
+                  <div class="text-sm text-black-600">1 pickup</div>
+                </div>
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </div>
+        <div class="w-100">
+          <ion-card mode="ios" style="margin: 8px">
+            <ion-card-content>
+              <div class="flex flex-row items-start justify-start">
+                <div class="mr-2">
+                  <img 
+                    style="height: 40px;"
+                    src="assets/images/bg-truck-lg.png" 
+                    class="rounded float-left" 
+                    alt="Truck Large"
+                  />
+                </div>
+                <div class="flex flex-col items-start">
+                  <div class="text-sm font-medium text-black-200">Inprogress</div>
+                  <div class="text-sm text-black-600">1 pickup</div>
+                </div>
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </div>
+  
+      <div class="flex flex-row justify-center items-center">
+        <div class="w-100">
+          <ion-card mode="ios" style="margin: 8px">
+            <ion-card-content>
+              <div class="flex flex-row items-start justify-start">
+                <div class="mr-2">
+                  <img 
+                    style="height: 40px;"
+                    src="assets/images/bg-truck-lg.png" 
+                    class="rounded float-left" 
+                    alt="Truck Large"
+                  />
+                </div>
+                <div class="flex flex-col items-start">
+                  <div class="text-sm font-medium text-black-200">Success</div>
+                  <div class="text-sm text-black-600">1 pickup</div>
+                </div>
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </div>
+        <div class="w-100">
+          <ion-card mode="ios" style="margin: 8px">
+            <ion-card-content>
+              <div class="flex flex-row items-start justify-start">
+                <div class="mr-2">
+                  <img 
+                    style="height: 40px;"
+                    src="assets/images/bg-truck-lg.png" 
+                    class="rounded float-left" 
+                    alt="Truck Large"
+                  />
+                </div>
+                <div class="flex flex-col items-start">
+                  <div class="text-sm font-medium text-black-200">Trouble</div>
+                  <div class="text-sm text-black-600">1 pickup</div>
+                </div>
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </div>
+  
+      <div class="m-2 flex flex-row justify-between items-center">
+        <div class="text-black-600 font-medium text-md">
+          Pending
+        </div>
+        <div class="text-red font-medium text-md">
+          Lihat Semua
+        </div>
+      </div>
+  
+      <ion-card mode="ios" style="margin: 8px">
+        <ion-card-content mode="md">
+          <div class="flex flex-row justify-between items-center">
+            <div class="flex flex-row justify-start items-start">
+              <div>
+                <img 
+                  style="height: 32px;"
+                  src="assets/images/bg-truck-sm.png" 
+                  class="rounded float-left" 
+                  alt="Truck Small"
+                />
+              </div>
+              <div class="flex flex-col items-center ml-2">
+                <div class="text-sm text-black-600 font-medium">#123456789</div>
+                <div class="text-sm text-black-200">10 Sep 2021</div>
+              </div>
+            </div>
+            <div class="flex justify-start items-center">
+              <ion-chip color="warning" class="text-sm font-medium">Pending</ion-chip>
+            </div>
+          </div>
+          <div class="border-bottom my-2"></div>
+          <div class="flex flex-row justify-between items-center mb-3">
+            <div class="flex flex-col items-start">
+              <div class="text-sm text-black-200">Berat</div>
+              <div class="text-sm text-black-600">32 Kg</div>
+            </div>
+            <div class="flex flex-col items-start">
+              <div class="text-sm text-black-200">Total Paket</div>
+              <div class="text-sm text-black-600">50</div>
+            </div>
+            <div class="flex flex-col items-end">
+              <div class="text-sm text-black-200">Estimasi</div>
+              <div class="text-sm text-black-600">10 Sep 2021, 20:20 WIB</div>
+            </div>
+          </div>
+          <div class="w-100 rounded-lg bg-yellow p-2" style="background-color: #FFFAEB;">
+            <div class="flex flex-row justify-start items-start">
+              <div class="mr-2">
+                <img 
+                  src="assets/images/bg-location.png" 
+                  class="rounded float-left" 
+                  alt="Pin Location"
+                />
+              </div>
+              <div class="flex flex-col items-start">
+                <div class="text-sm font-medium text-black-600">Kost</div>
+                <div class="text-sm text-black-200">
+                  Jl. Ampera Raya No. 133, RT.05/RW.10, Ragunan, Kec. Ps. Minggu, Kota Jakarta....
+                </div>
+              </div>
+            </div>
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </div>
+</ion-content>

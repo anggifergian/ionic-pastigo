@@ -1,0 +1,41 @@
+<ion-content [fullscreen]="true">
+  <div class="base-container" style="position: relative;">
+    <div>
+      <img 
+        style="height: 200px; object-fit: cover; width: 100%;"
+        src="assets/images/bg-login.png" 
+        alt="Background Home"
+      />
+    </div>
+
+    <div 
+      class="sticky-bottom-container px-3 py-4" 
+      style="margin-top: -20px; max-height: 100vh; background-color: #fff; position: relative;"
+    >
+      <div 
+        class="font-medium text-black-600" 
+        style="text-align: center; font-size: 20px;"
+      >
+        Masuk ke Akun Mu.
+      </div>
+
+      <form style="padding-top: 20px">
+        <div class="form-group">
+          <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
+        </div>
+
+        <div class="form-group">
+          <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password" />
+        </div>
+      </form>
+
+      <div class="text-sm text-red" style="text-align: right;">
+        Lupa Password?
+      </div>
+
+      <ion-button (click)="handleLogin()" expand="block" color="danger" mode="ios" size="default" style="margin-top: 20px;">
+        Masuk
+      </ion-button>
+    </div>
+  </div>
+</ion-content>
